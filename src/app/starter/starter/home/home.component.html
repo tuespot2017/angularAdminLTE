@@ -1,0 +1,168 @@
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <app-starter-nav-bar></app-starter-nav-bar>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <app-starter-main-side-bar></app-starter-main-side-bar>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content ">
+      <!-------------------- Page Design Start --------------------->
+      <div class="container-fluid ">
+        <br>
+        <div class="row ">
+          <!-- left column -->
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-md-9">
+                    <h3 class="card-title">Import file</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" ><button  class="btn btn-block btn-warning"><b>Sample File</b></button></a>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- /.card-header -->
+              <!-- form start -->
+
+              <div class="card-body">
+
+                <!-- upload detail form  -->
+                <form id="xlsx_record" method="post" action="#">
+                  <div class="form-group">
+                    <label>Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      name="exampleInputEmail1"
+                      placeholder="Enter Title"
+                    />
+                  </div>
+                  <div class="form-group" style="display:none">
+                    <label>Date</label>
+                    <input
+                      type="datetime-local"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-group" style="display:none">
+                    <label>File Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="file_name"
+                      name="file_name"
+                    />
+                  </div>
+                  <div class="form-group" style="display:none;">
+                    <label>Data type</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="dataType"
+                      value="<?php echo $i; ?>"
+                    />
+                  </div>
+                  <!-- real submit -->
+                  <div style="display: none">
+                    <input
+                      type="submit"
+                      id="real_button"
+                      class="btn btn-primary"
+                      value="submit"
+                    />
+                  </div>
+                </form>
+
+                <!-- upload file form -->
+                <form id="upload_form" action="#" method="post">
+                  <div class="form-group">
+                    <label>File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="up_file"
+                          name="up_file"
+                        />
+                        <label
+                          class="custom-file-label"
+                          id="labelfield"
+                        >Choose file</label
+                        >
+                      </div>
+                      <div class="input-group-append">
+                        <button type="submit" class="input-group-text">Upload</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="form-group" style="display:none;">
+                  <button id="dragdropdiv" class="input-group-text">Upload</button>
+                </div>
+
+
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                  >
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+                  <!-- fake submit -->
+                  <div class="card-footer">
+                    <button type="submit" id="fake_button"	 class="btn btn-primary form-control">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-3"></div>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+
+      <!-------------------- Page Design End --------------------->
+    </section>
+
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <app-starter-control-side-bar></app-starter-control-side-bar>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <app-starter-footer></app-starter-footer>
+</div>
+<!-- ./wrapper -->
